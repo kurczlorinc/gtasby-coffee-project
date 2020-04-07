@@ -54,6 +54,9 @@ h6{
   background: var(--mainDark);
   color:var(--mainWhite);
 }
-.menu{
+.menu, .contact{
   background: var(--mainGrey);
+}
+.card-img-height{
+  max-height: 426px;
 }

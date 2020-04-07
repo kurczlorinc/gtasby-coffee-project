@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import BackgroundSection from '../components/Globals/BackgroundSection'
 import Info from '../components/Home/info'
 import Menu from '../components/Home/Menu'
+import Products from "../components/Home/Products"
+import Contact from "../components/Home/Contact"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -16,7 +18,9 @@ const IndexPage = ({data}) => (
       title="regular joe's"
       styleClass="default-background" />
     <Info />
-    <Menu items={data.menu}/>
+    <Menu items={data.menu} />
+    <Products />
+    <Contact />
   </Layout>
 )
 
@@ -49,7 +53,4 @@ export const query = graphql`
   }
 }
 `
-
-
-
 export default IndexPage
